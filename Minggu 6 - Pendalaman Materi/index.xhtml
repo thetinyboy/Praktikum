@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <h1 id="main-title">Reservation Hotel Room</h1>
+    <form class="form-container" action="#" method="post">
+        <fieldset>
+            <legend><strong>Personal Data</strong></legend>
+            <ol>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" />
+                </li>
+                <li>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email" />
+                </li>
+                <li>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" />
+                </li>
+            </ol>
+        </fieldset>
+
+        <p>Reservation Room Form</p>
+        <ol>
+            <li>
+                <label for="rname">Reservator Name</label>
+                <input type="text" id="rname" name="rname" />
+            </li>
+            <li>
+                <label for="bdate">Booking date</label>
+                <input type="text" id="bdate" name="bdate" />
+            </li>
+            <li>
+                <label for="rtype">Room Type</label>
+                <select id="rtype" name="rtype">
+                    <option>Standard Room</option>
+                    <option>Deluxe Room</option>
+                    <option>Suite Room</option>
+                </select>
+            </li>
+            <li>
+                <label for="btype">Bed Type</label>
+                <select id="btype" name="btype">
+                    <option>Single bed</option>
+                    <option>Double bed</option>
+                </select>
+            </li>
+            <li>
+                <label>Breakfast</label>
+                <input type="radio" id="withb" name="breakfast" value="with" /> With Breakfast
+                <input type="radio" id="withoutb" name="breakfast" value="without" /> Without Breakfast
+            </li>
+        </ol>
+
+        <fieldset>
+            <legend><strong>Payment</strong></legend>
+            <ol>
+                <li>
+                    <label for="checkin">Check-in date</label>
+                    <input type="text" id="checkin" name="checkin" />
+                </li>
+                <li>
+                    <label for="checkout">Check-out date</label>
+                    <input type="text" id="checkout" name="checkout" />
+                </li>
+                <li>
+                    <label for="paymethod">Payment Method</label>
+                    <select id="paymethod" name="paymethod">
+                        <option>Cash</option>
+                        <option>Credit Card</option>
+                        <option>Debit Card</option>
+                    </select>
+                </li>
+            </ol>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="SUBMIT" />
+        </p>
+    </form>
+</body>
+</html>
